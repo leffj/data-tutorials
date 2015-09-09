@@ -77,7 +77,7 @@ To do this, I recommend using a program called 'cutadapt'. For this program to w
 
 Use the following command as a base to to trim adapters. This example assumes a mixed 16S/ITS run and removes both sets of adapters simultaneously. Note that we remove reverse adapter/primer sequences from the forward reads and vice versa for the reverse reads. This will not work with the tutorial dataset since the reads are not long enough. It takes approx. 20 min on a MiSeq dataset.
 
-	cutadapt -a 16S_rev_primer=<16S reverse adapter/primer sequence> -a ITS_rev_primer=<ITS reverse adapter/primer sequence> -A 16S_fwd_primer=<16S forward adapter/primer sequence> -A ITS_fwd_primer=<ITS forward adapter/primer sequence> -O 1 -o <PATH/TO/R1/OUTPUT.fq> -p <PATH/TO/R2/OUTPUT.fq> Undetermined_S0_L001_R1_001.fastq.gz Undetermined_S0_L001_R2_001.fastq.gz 2> <PATH/TO/cutadapt.log>
+	cutadapt -a 16S_rev_primer=<16S reverse adapter/primer sequence> -a ITS_rev_primer=<ITS reverse adapter/primer sequence> -A 16S_fwd_primer=<16S forward adapter/primer sequence> -A ITS_fwd_primer=<ITS forward adapter/primer sequence> -O 1 -o <PATH/TO/R1/OUTPUT.fq> -p <PATH/TO/R2/OUTPUT.fq> Undetermined_S0_L001_R1_001.fastq.gz Undetermined_S0_L001_R2_001.fastq.gz 1> <PATH/TO/cutadapt.log>
 
 You can now use the output files from cutadapt with the normal raw index reads file to do demultiplexing and all other downstream processing steps.
 
