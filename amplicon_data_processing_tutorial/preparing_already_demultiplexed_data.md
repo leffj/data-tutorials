@@ -13,4 +13,4 @@ To do the formatting, run this command using your own mapping file. This example
 
 	format_multifile_headers_uparse.py -i Demo_16S_MappingFile_sep_files.txt -o demultiplexed_seqs
 
-Now you can use the sequences as normal in the rest of the pipeline.
+Now you can use the sequences as normal in the rest of the [pipeline](amplicon_data_processing-16S.md).
