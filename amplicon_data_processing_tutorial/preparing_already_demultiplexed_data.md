@@ -11,6 +11,6 @@ However, for our purposes, we want sequences from all samples to be contained in
 
 To do the formatting, run this command using your own mapping file. This example assumes the mapping file name is: `Demo_16S_MappingFile_sep_files.txt`
 
-  format_multifile_headers_uparse.py -i Demo_16S_MappingFile_sep_files.txt -o demultiplexed_seqs
+	format_multifile_headers_uparse.py -i Demo_16S_MappingFile_sep_files.txt -o demultiplexed_seqs
 
 Now you can use the sequences as normal in the rest of the pipeline.
